@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat:400,700|Orbitron&display=swap" rel="stylesheet">
+    <title>RulletWin</title>
+</head>
+<body>
+  <script src="JS/anime.min.js"></script>
+  <script src="JS/Ticket.js"></script>
+  <script src="JS/generator.js"></script>
+  <script src="JS/Cycle-loto.js"></script>
+
+  <div class="shapka"></div>
+
+  <div class="ani-Rullet" id="rullet">Rullet</div>
+
+  <script>
+    var cssSelector = anime({
+  targets: '#rullet',
+  translateX: 460
+});
+  </script>
+
+  <div class="ani-Win" id="win">Win</div>
+
+  <script>
+    var cssSelector = anime({
+  targets: '#win',
+  translateX: -250
+});
+  </script>
+
+  <div class="logo" id="logo1"><img src="images/logo.png"></div>
+
+  <script>
+    var cssSelector = anime({
+  targets: '#logo1',
+  translateY: -490
+});
+  </script>
+
+  <div class="bar-center" id="bar-center1"><img src="images/bar-center.png"></div>
+
+  
+
+  <div class="bar-center2" id="bar-center2"><img src="images/bar-center.png"></div>
+  <div class="ratebar" id="rate_bar"><img src="images/left-rate-bar.png"></div>
+  <div class="quests_bar" id="quests_bar1"><img src="images/quests.png"></div>
+
+  
+
+  <nav class="rating" id="rate" onclick="rate1()">Rating</nav>
+  <script>
+  function  rate1(){
+
+    
+    var cssSelector = anime({
+  targets: '#rate_bar',
+  translateX: 190
+  });
+    var cssSelector = anime({
+  targets: '#quests_bar1',
+  translateX: -279
+  });
+    
+    
+
+  }
+</script>
+
+  <nav class="concurses" id="concurs" onclick="quests()">Concurses</nav>
+  <script>
+  function  quests(){
+    var cssSelector = anime({
+  targets: '#rate_bar',
+  translateX: -190
+  });
+
+    
+    var cssSelector = anime({
+  targets: '#quests_bar1',
+  translateX: 279
+  });
+    
+    
+
+  }
+</script>
+  <div class="online" id="online1">Online: <h1 id="online-a"></h1></div>
+  
+  <div class="Score1" id="Score">Score: 100</div>
+  <button class="Button1" onclick="out()">START</button>
+  <div class="Result1" id="res2">Result:</div>
+  <table>
+     <tr>
+            
+                <td class="todo-item" id="td1">0</td>
+                <td class="todo-item2" id="td2">0</td> 
+                <td class="todo-item3" id="td3">0</td>
+                
+                
+    </tr>
+        <tr>
+            
+                <td class="todo-item4" id="td4">0</td>
+                <td class="todo-item5" id="td5">0</td> 
+                <td class="todo-item6" id="td6">0</td>
+                
+    </tr>
+        <tr>
+            
+                <td class="todo-item7" id="td7">0</td>
+                <td class="todo-item8" id="td8">0</td> 
+                <td class="todo-item9" id="td9">0</td>
+
+
+
+                
+    </tr>
+
+
+        
+            
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
